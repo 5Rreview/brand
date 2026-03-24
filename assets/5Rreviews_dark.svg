@@ -1,0 +1,33 @@
+<svg width="1055" height="990" viewBox="0 0 1055 990" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad" x1="527" y1="0" x2="527" y2="990" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#2a2830"/>
+            <stop offset="100%" stop-color="#17161a"/>
+        </linearGradient>
+        <linearGradient id="stroke" x1="100" y1="50" x2="900" y2="900" gradientUnits="userSpaceOnUse">
+            <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.2"/>
+            <stop offset="40%"  stop-color="#ffffff" stop-opacity="0.05"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+        </linearGradient>
+        <filter id="shadow" x="-15%" y="-10%" width="130%" height="130%">
+            <feDropShadow dx="0" dy="4"  stdDeviation="12" flood-color="#000000" flood-opacity="0.9"/>
+            <feDropShadow dx="0" dy="1"  stdDeviation="3"  flood-color="#000000" flood-opacity="0.6"/>
+        </filter>
+    </defs>
+
+    <!-- Основная звезда -->
+    <path
+            filter="url(#shadow)"
+            fill="url(#grad)"
+            stroke="url(#stroke)"
+            stroke-width="5"
+            d="M484.873 42.5517C492.661 19.1476 525.766 19.1499 533.551 42.5556L631.278 336.414C634.75 346.854 644.52 353.9 655.523 353.9H973.024C998.006 353.901 1008.25 385.982 987.887 400.458L718.076 592.263L510.879 738.397L237.799 931.588C217.573 945.894 190.824 926.054 198.648 902.546L295.913 610.286C299.464 599.609 295.616 587.867 286.431 581.364L30.88 400.487C10.4662 386.04 20.6888 353.901 45.6983 353.9H362.847C373.849 353.9 383.619 346.858 387.091 336.418L484.873 42.5517Z"/>
+
+    <!-- Отколотый кончик -->
+    <path
+            filter="url(#shadow)"
+            fill="url(#grad)"
+            stroke="url(#stroke)"
+            stroke-width="5"
+            d="M745.594 681.084C745.623 681.078 745.66 681.093 745.672 681.131L819.772 905.109C827.565 928.675 800.678 948.47 780.491 934.026L554.318 772.186C536.521 759.448 541.824 731.704 563.065 726.43L745.552 681.109C745.563 681.096 745.578 681.087 745.594 681.084Z"/>
+</svg>
