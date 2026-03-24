@@ -2,7 +2,7 @@
     <defs>
         <filter id="shadow3l" x="-15%" y="-10%" width="135%" height="138%">
             <feGaussianBlur in="SourceAlpha" stdDeviation="22" result="blur"/>
-            <feFlood flood-color="#FF9213" flood-opacity="0.35" result="color"/>
+            <feFlood flood-color="#E07D00" flood-opacity="0.35" result="color"/>
             <feComposite in="color" in2="blur" operator="in" result="glow"/>
             <feOffset dy="4" result="offsetGlow"/>
             <feMerge>
@@ -12,7 +12,7 @@
         </filter>
         <linearGradient id="grad3l" x1="527" y1="20" x2="527" y2="970" gradientUnits="userSpaceOnUse">
             <stop offset="0%"   stop-color="#FFB443"/>
-            <stop offset="22%"  stop-color="#FF9213"/>
+            <stop offset="22%"  stop-color="#E07D00"/>
             <stop offset="48%"  stop-color="#C46800"/>
             <stop offset="72%"  stop-color="#e0ddd8"/>
             <stop offset="100%" stop-color="#F0EDE8"/>
