@@ -104,7 +104,7 @@
                             Design System
                         </div>
                         <h1 class="text-3xl font-bold -tracking-wide"><span class="font-outfit font-black">5R&#9733;</span> <span class="font-sora">Ceramic Brand Book</span></h1>
-                    </div> 
+                    </div>
                 </div>
                 <!-- Dark Mode Toggle -->
                 <button @click="darkMode = !darkMode; document.documentElement.classList.toggle('dark', darkMode)"
@@ -288,7 +288,7 @@
                                 </div>
                                 <div class="grid grid-cols-[110px_1fr_1fr] gap-4 px-5 py-3 items-center">
                                     <span class="text-[12px] text-ceramic-gray-600 dark:text-ceramic-gray-400 font-medium">Primary Logo</span>
-                                    <span class="text-[15px] font-bold"><span class="font-outfit text-ceramic-gray-900 dark:text-white">5</span><span class="text-star-amber-500">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+                                    <span class="text-[15px] font-bold"><span class="font-outfit text-ceramic-gray-900 dark:text-white">5</span><span class="">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
                                     <span class="text-[12px] text-star-amber-500 font-semibold">Header, hero, trust badges</span>
                                 </div>
                                 <div class="grid grid-cols-[110px_1fr_1fr] gap-4 px-5 py-3 items-center">
@@ -467,8 +467,10 @@
                                 <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-900">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-white">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
-                                        <span class="font-sora text-[26px] font-bold tracking-wide text-ceramic-purple-400">AI</span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-8 font-mono text-[10px] font-bold text-ceramic-purple-400 bg-ceramic-purple-500/[.12] border border-ceramic-purple-500/25 px-1.5 py-0.5 rounded-md whitespace-nowrap">AI</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
@@ -480,8 +482,10 @@
                                 <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-50">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-ceramic-zinc-1000">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
-                                        <span class="font-sora text-[26px] font-bold tracking-wide text-ceramic-purple-500">AI</span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-8 font-mono text-[10px] font-bold text-ceramic-purple-500 bg-ceramic-purple-500/[.08] border border-ceramic-purple-500/20 px-1.5 py-0.5 rounded-md whitespace-nowrap">AI</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
@@ -495,11 +499,13 @@
                         <div class="font-mono text-[10px] text-ceramic-gray-400 dark:text-ceramic-gray-600 tracking-[3px] uppercase mb-2 mt-10 font-bold">SUB-BRAND TRUST &mdash; 5R&#9733; TRUST</div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                             <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-ceramic-green-500/15 rounded-xl overflow-hidden">
-                                <div class="relative flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-900">
-                                    <span class="absolute top-3 right-3 font-mono text-[11px] font-semibold text-ceramic-green-400 bg-ceramic-green-500/[.1] border border-ceramic-green-500/20 px-3 py-1 rounded-full">&#9733; Trust</span>
+                                <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-900">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-white">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-12 font-mono text-[10px] font-bold text-ceramic-green-400 bg-ceramic-green-500/[.12] border border-ceramic-green-500/25 px-1.5 py-0.5 rounded-md whitespace-nowrap">Trust</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
@@ -508,11 +514,13 @@
                                 </div>
                             </div>
                             <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl overflow-hidden">
-                                <div class="relative flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-50">
-                                    <span class="absolute top-3 right-3 font-mono text-[11px] font-semibold text-ceramic-green-600 bg-ceramic-green-500/[.08] border border-ceramic-green-500/15 px-3 py-1 rounded-full">&#9733; Trust</span>
+                                <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-50">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-ceramic-zinc-1000">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-12 font-mono text-[10px] font-bold text-ceramic-green-600 bg-ceramic-green-500/[.08] border border-ceramic-green-500/20 px-1.5 py-0.5 rounded-md whitespace-nowrap">Trust</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
@@ -526,11 +534,13 @@
                         <div class="font-mono text-[10px] text-ceramic-gray-400 dark:text-ceramic-gray-600 tracking-[3px] uppercase mb-2 mt-10 font-bold">SUB-BRAND BUSINESS &mdash; 5R&#9733; BUSINESS</div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                             <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-ceramic-blue-500/15 rounded-xl overflow-hidden">
-                                <div class="relative flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-900">
-                                    <span class="absolute top-3 right-3 font-mono text-[11px] font-semibold text-ceramic-blue-400 bg-ceramic-blue-500/[.1] border border-ceramic-blue-500/20 px-3 py-1 rounded-full">&#9733; Business</span>
+                                <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-900">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-white">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-16 font-mono text-[10px] font-bold text-ceramic-blue-400 bg-ceramic-blue-500/[.12] border border-ceramic-blue-500/25 px-1.5 py-0.5 rounded-md whitespace-nowrap">Business</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
@@ -539,11 +549,13 @@
                                 </div>
                             </div>
                             <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl overflow-hidden">
-                                <div class="relative flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-50">
-                                    <span class="absolute top-3 right-3 font-mono text-[11px] font-semibold text-ceramic-blue-600 bg-ceramic-blue-500/[.08] border border-ceramic-blue-500/15 px-3 py-1 rounded-full">&#9733; Business</span>
+                                <div class="flex items-center justify-center min-h-[150px] p-6 bg-ceramic-zinc-50">
                                     <div class="inline-flex items-end gap-1">
                                         <span class="font-outfit font-black text-[38px] leading-[.85] text-ceramic-zinc-1000">5R</span>
-                                        <span class="star-icon w-8 h-8 inline-block"></span>
+                                        <span class="relative inline-block">
+                                            <span class="star-icon w-8 h-8 inline-block"></span>
+                                            <span class="absolute -top-3 -right-16 font-mono text-[10px] font-bold text-ceramic-blue-600 bg-ceramic-blue-500/[.08] border border-ceramic-blue-500/20 px-1.5 py-0.5 rounded-md whitespace-nowrap">Business</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="px-3.5 py-2.5 border-t border-gray-200 dark:border-ceramic-zinc-800 flex justify-between items-center">
