@@ -105,7 +105,111 @@ input:focus-visible {
     outline-offset: 2px;
 }
 
+/* ===== Hero Star Cascade Animation ===== */
+.hero-star {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hero-star--animate {
+    animation: heroStarPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hero-star--animate:nth-child(1) { animation-delay: 0.15s; }
+.hero-star--animate:nth-child(2) { animation-delay: 0.25s; }
+.hero-star--animate:nth-child(3) { animation-delay: 0.35s; }
+.hero-star--animate:nth-child(4) { animation-delay: 0.45s; }
+.hero-star--animate:nth-child(5) { animation-delay: 0.55s; }
+
+@keyframes heroStarPop {
+    0%   { opacity: 0; transform: scale(0); }
+    50%  { opacity: 1; transform: scale(1.25); }
+    70%  { transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Hero star container fade-in */
+.hero-logo-enter {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.hero-logo-enter--animate {
+    animation: heroLogoFade 0.8s ease-out forwards;
+}
+
+@keyframes heroLogoFade {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Diamond Sparkle for Hero ===== */
+.hero-sparkle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -4px;
+    right: -2px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hero-sparkle--animate {
+    animation: heroSparkle 8s ease-in-out 1.5s infinite;
+}
+
+@keyframes heroSparkle {
+    0%, 88% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    93% {
+        opacity: 1;
+        transform: scale(1.3) rotate(15deg);
+    }
+    96% {
+        opacity: 0.6;
+        transform: scale(0.5) rotate(25deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) rotate(35deg);
+    }
+}
+
+/* Sequential sparkle on each star */
+.hero-star:nth-child(2) .hero-sparkle--animate { animation-delay: 2.5s; }
+.hero-star:nth-child(3) .hero-sparkle--animate { animation-delay: 3.5s; }
+.hero-star:nth-child(4) .hero-sparkle--animate { animation-delay: 4.5s; }
+.hero-star:nth-child(5) .hero-sparkle--animate { animation-delay: 5.5s; }
+
+/* ===== Hero big star entrance ===== */
+.hero-big-star {
+    opacity: 0;
+    transform: scale(0) rotate(-15deg);
+}
+
+.hero-big-star--animate {
+    animation: heroBigStarPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.05s forwards;
+}
+
+@keyframes heroBigStarPop {
+    0%   { opacity: 0; transform: scale(0) rotate(-15deg); }
+    60%  { opacity: 1; transform: scale(1.15) rotate(3deg); }
+    80%  { transform: scale(0.95) rotate(-1deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
 /* Smooth dark mode transition */
 html {
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .hero-star, .hero-big-star, .hero-logo-enter {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+    .hero-sparkle { display: none; }
 }
