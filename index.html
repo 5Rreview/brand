@@ -452,47 +452,37 @@ Check. Trust. Decide.</pre>
                     5R&#9733; core + product suffix
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <!-- Reviews -->
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-star-amber-500/15 rounded-xl p-5">
-                        <div class="inline-flex items-center gap-2 mb-2">
-                            <span class="font-outfit font-bold text-[16px] text-ceramic-gray-900 dark:text-white">5R&#9733;</span>
-                            <span class="font-sora font-bold text-[16px] text-star-amber-500">Reviews</span>
-                        </div>
-                        <div class="text-[13px] text-ceramic-gray-500 leading-relaxed">User reviews, ratings, experiences</div>
-                    </div>
-                    <!-- Trust Score -->
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-ceramic-green-500/15 rounded-xl p-5">
-                        <div class="inline-flex items-center gap-2 mb-2">
-                            <span class="font-outfit font-bold text-[16px] text-ceramic-gray-900 dark:text-white">5R&#9733;</span>
-                            <span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-green-500/10 text-ceramic-green-500">Trust Score</span>
-                        </div>
-                        <div class="text-[13px] text-ceramic-gray-500 leading-relaxed">0-1000 trust rating</div>
-                    </div>
-                    <!-- AI Risk Flags -->
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-ceramic-purple-500/15 rounded-xl p-5">
-                        <div class="inline-flex items-center gap-2 mb-2">
-                            <span class="font-outfit font-bold text-[16px] text-ceramic-gray-900 dark:text-white">5R&#9733;</span>
-                            <span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-purple-500/10 text-ceramic-purple-500">AI Risk Flags</span>
-                        </div>
-                        <div class="text-[13px] text-ceramic-gray-500 leading-relaxed">AI-powered risk detection</div>
-                    </div>
-                    <!-- Trust Signals -->
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-ceramic-blue-500/15 rounded-xl p-5">
-                        <div class="inline-flex items-center gap-2 mb-2">
-                            <span class="font-outfit font-bold text-[16px] text-ceramic-gray-900 dark:text-white">5R&#9733;</span>
-                            <span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-blue-500/10 text-ceramic-blue-500">Trust Signals</span>
-                        </div>
-                        <div class="text-[13px] text-ceramic-gray-500 leading-relaxed">Verification &amp; safety checks</div>
-                    </div>
-                    <!-- Event Timeline -->
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5 sm:col-span-2">
-                        <div class="inline-flex items-center gap-2 mb-2">
-                            <span class="font-outfit font-bold text-[16px] text-ceramic-gray-900 dark:text-white">5R&#9733;</span>
-                            <span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-gray-500/10 text-ceramic-gray-500">Event Timeline</span>
-                        </div>
-                        <div class="text-[13px] text-ceramic-gray-500 leading-relaxed">Business events &amp; history</div>
-                    </div>
+                <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl overflow-hidden">
+                    <table class="w-full text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 dark:border-ceramic-zinc-800 bg-white/50 dark:bg-ceramic-zinc-900/50">
+                                <td class="px-4 py-2.5 font-mono text-[10px] text-ceramic-gray-400 dark:text-ceramic-gray-600 tracking-wider uppercase">Product</td>
+                                <td class="px-4 py-2.5 font-mono text-[10px] text-ceramic-gray-400 dark:text-ceramic-gray-600 tracking-wider uppercase">Description</td>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 dark:divide-ceramic-zinc-800/50">
+                            <tr>
+                                <td class="px-4 py-3"><span class="font-bold">Reviews</span></td>
+                                <td class="px-4 py-3 text-ceramic-gray-500">User reviews, ratings, experiences</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-green-500/10 text-ceramic-green-500">Trust Score</span></td>
+                                <td class="px-4 py-3 text-ceramic-gray-500">0&ndash;1000 trust rating</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-purple-500/10 text-ceramic-purple-500">AI Risk Flags</span></td>
+                                <td class="px-4 py-3 text-ceramic-gray-500">AI-powered risk detection</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-blue-500/10 text-ceramic-blue-500">Trust Signals</span></td>
+                                <td class="px-4 py-3 text-ceramic-gray-500">Verification &amp; safety checks</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3"><span class="inline-flex items-center px-2 py-0.5 text-[11px] font-bold rounded-md bg-ceramic-gray-500/10 text-ceramic-gray-500">Event Timeline</span></td>
+                                <td class="px-4 py-3 text-ceramic-gray-500">Business events &amp; history</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
@@ -684,34 +674,7 @@ Check. Trust. Decide.</pre>
                     </div>
                 </div>
 
-                <!-- Live Font Previews -->
-                <div class="font-mono text-[10px] text-ceramic-gray-400 dark:text-ceramic-gray-600 tracking-[3px] uppercase mb-3 font-bold">LIVE PREVIEW</div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">Outfit &middot; Logo</div>
-                        <div class="font-outfit font-bold text-[28px] sm:text-[42px] leading-none">5&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    </div>
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">Sora &middot; Tagline</div>
-                        <div class="font-sora font-semibold text-[20px] italic">Where Trust is Measurable</div>
-                    </div>
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">Plus Jakarta Sans &middot; Headings</div>
-                        <div class="font-jakarta font-bold text-[20px]">Card Title Heading</div>
-                    </div>
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">DM Sans &middot; Data</div>
-                        <div class="font-dm font-bold text-[20px]">4.87 / 5.00 &middot; Trust Score</div>
-                    </div>
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">Inter &middot; Body</div>
-                        <div class="font-inter text-[15px] leading-relaxed text-ceramic-gray-500">Trusted reviews platform with algorithm-based fake detection and transparent trust scoring.</div>
-                    </div>
-                    <div class="bg-ceramic-gray-50 dark:bg-ceramic-zinc-950 border border-gray-200 dark:border-ceramic-zinc-800 rounded-xl p-5">
-                        <div class="font-mono text-[10px] text-star-amber-500 mb-2">Space Mono &middot; Code</div>
-                        <div class="font-mono text-[14px]">--ceramic-brand: #E07D00;</div>
-                    </div>
-                </div>
+                <!-- Live Preview removed — fonts shown in table above -->
             </section>
 
         </div>
